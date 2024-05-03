@@ -13,7 +13,8 @@ echo "开始配置镜像源 提高crate拉取速度 使用utsc"
 
 mkdir -vp ${CARGO_HOME:-$HOME/.cargo}
 
-cat << EOF | tee -a ${CARGO_HOME:-$HOME/.cargo}/config
+echo "rust config 文件更新为config.toml"
+cat << EOF | tee -a ${CARGO_HOME:-$HOME/.cargo}/config.toml
 [source.crates-io]
 replace-with = 'ustc'
 
