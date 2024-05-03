@@ -8,7 +8,7 @@ curl https://sh.rustup.rs -sSf | sh
 # 安装完成
 
 source $HOME/.cargo/env
-
+echo "安装rust cargo 完成"
 echo "开始配置镜像源 提高crate拉取速度 使用utsc"
 
 mkdir -vp ${CARGO_HOME:-$HOME/.cargo}
