@@ -7,14 +7,14 @@ A repository for autocomplete the configuration for me
 winget install JanDeDobbeleer.OhMyPosh -s winget
 # choco
 choco install oh-my-posh
-#scoop
+# scoop
 scoop install https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/oh-my-posh.json
 # manual
 Set-ExecutionPolicy Bypass -Scope Process -Force; Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://ohmyposh.dev/install.ps1'))
 ```
 2. 然后去github的theme里面选择喜欢的类型，文件拓展名是`.omp.json`格式
 
-3. 在~目录`mkdir Posh_theme`，然后直接将文件放到里面，保存
+3. 在`~`目录`mkdir Posh_theme`，然后直接将文件放到里面，保存
 
 4. 输入这些命令去安装插件
 ```powershell 
