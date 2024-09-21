@@ -3,7 +3,14 @@ A repository for autocomplete the configuration for me
 ## oh my posh 主题设置
 1. 先去`oh my posh`官网下载`oh my posh`的插件，由于这个不作为插件支持，需要使用包管理器**Scoop**或者**Choco**或者**winget**
 ```powershell
-
+# winget
+winget install JanDeDobbeleer.OhMyPosh -s winget
+# choco
+choco install oh-my-posh
+#scoop
+scoop install https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/oh-my-posh.json
+# manual
+Set-ExecutionPolicy Bypass -Scope Process -Force; Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://ohmyposh.dev/install.ps1'))
 ```
 2. 然后去github的theme里面选择喜欢的类型，文件拓展名是`.omp.json`格式
 
